@@ -79,11 +79,12 @@
                 <md-filled-button onclick="appendToDisplay('3')">3</md-filled-button>
                 <md-filled-tonal-button onclick="appendToDisplay('x')">×</md-filled-tonal-button>
                 
-                <md-filled-button style="--md-filled-button-container-color: #dc3545;" onclick="appendToDisplay('C')">C</md-filled-button>
+                <md-filled-button style="--md-filled-button-container-color: #dc3545;" onclick="clearDisplay()">C</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('0')">0</md-filled-button>
-                <md-filled-tonal-button onclick="appendToDisplay('=')">=</md-filled-tonal-button>
+                <md-filled-tonal-button onclick="calculateResult()">=</md-filled-tonal-button>
                 <md-filled-tonal-button onclick="appendToDisplay('/')">÷</md-filled-tonal-button>
             </div>
         </div>
     </div>
+    <script src ="scripts.js"></script>
 </body>
