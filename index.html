@@ -22,43 +22,8 @@
 </head>
 
 <body>
-    <!--
-    <table>
-        <tr>
-            <td colspan="4">
-                <input type="text" id="result-window" disabled>
-            </td>
-        </tr>
-        <tr>
-            <td><button onclick="appendToDisplay('7')">7</button></td>
-            <td><button onclick="appendToDisplay('8')">8</button></td>
-            <td><button onclick="appendToDisplay('9')">9</button></td>
-            <td><button class ="dark-button" onclick="appendToDisplay('+')">+</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="appendToDisplay('4')">4</button></td>
-            <td><button onclick="appendToDisplay('5')">5</button></td>
-            <td><button onclick="appendToDisplay('6')">6</button></td>
-            <td><button class ="dark-button" onclick="appendToDisplay('-')">-</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="appendToDisplay('1')">1</button></td>
-            <td><button onclick="appendToDisplay('2')">2</button></td>
-            <td><button onclick="appendToDisplay('3')">3</button></td>
-            <td><button class ="dark-button" onclick="appendToDisplay('x')">x</button></td>
-        </tr>
-        <tr>
-            <td><button id = "reset-button" onclick="appendToDisplay('C')">C</button></td>
-            <td><button onclick="appendToDisplay('0')">0</button></td>
-            <td><button class ="dark-button" onclick="appendToDisplay('=')">=</button></td>
-            <td><button class ="dark-button" onclick="appendToDisplay('/')">/</button></td>
-        </tr>
-
-    </table>
-    -->
-
-    <div class = "calculator-container"> <!--style="display: flex; justify-content: center; padding: 20px;"-->
-        <div class ="calculator-contents"> <!--style="background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);"-->
+    <div class = "calculator-container">
+        <div class ="calculator-contents">
             <div class="calculator-display">
                 <div id="result-window">0</div>
             </div>
@@ -67,22 +32,22 @@
                 <md-filled-button onclick="appendToDisplay('7')">7</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('8')">8</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('9')">9</md-filled-button>
-                <md-filled-tonal-button onclick="appendToDisplay('+')">+</md-filled-tonal-button>
+                <md-filled-tonal-button onclick="operatorClick('+')">+</md-filled-tonal-button>
                 
                 <md-filled-button onclick="appendToDisplay('4')">4</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('5')">5</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('6')">6</md-filled-button>
-                <md-filled-tonal-button onclick="appendToDisplay('-')">-</md-filled-tonal-button>
+                <md-filled-tonal-button onclick="operatorClick('-')">-</md-filled-tonal-button>
                 
                 <md-filled-button onclick="appendToDisplay('1')">1</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('2')">2</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('3')">3</md-filled-button>
-                <md-filled-tonal-button onclick="appendToDisplay('x')">×</md-filled-tonal-button>
+                <md-filled-tonal-button onclick="operatorClick('×')">x</md-filled-tonal-button>
                 
                 <md-filled-button style="--md-filled-button-container-color: #dc3545;" onclick="clearDisplay()">C</md-filled-button>
                 <md-filled-button onclick="appendToDisplay('0')">0</md-filled-button>
                 <md-filled-tonal-button onclick="calculateResult()">=</md-filled-tonal-button>
-                <md-filled-tonal-button onclick="appendToDisplay('/')">÷</md-filled-tonal-button>
+                <md-filled-tonal-button onclick="operatorClick('÷')">÷</md-filled-tonal-button>
             </div>
         </div>
     </div>
